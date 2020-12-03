@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>render</title>
+</head>
+<body>
+    <h2> First field - Name, second - Text, third - Category </h2>
+<ol>
+    {% for data in datas %} 
+    <li>
+        <ul>
+            <li>{{ data.Name }}</li>
+            <li>{{ data.Text }} </li>
+            <li>{{ data.Category }} </li>
+        </ul>
+            <p></p>
+    </li>
+    {% endfor %} 
+</ol>
+</body>
+</html>
