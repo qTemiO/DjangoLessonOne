@@ -19,8 +19,8 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('data/', views.getData),
+    path('data/<int:pk>/', views.getDataPk),
     path('dataRender/', views.getDataRender),
-    path('dataRender/<int:pk>/', views.getDataPk),
     path('dataVue/', views.getDataVue),
     path('dataVue/sendNames/', views.sendNames),
     path('dataVue/sendAll/', views.sendAll),
